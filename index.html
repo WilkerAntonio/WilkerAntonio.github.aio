@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-<html lang="en">
-
 <head>
 	<title>Inicio</title>
 	<meta charset="utf-8">
@@ -21,15 +19,15 @@
 		<header id="header">
 			<div class="container__header">
 				<div class="logo">
-					<img src="../img/logotipo.png" alt="">
+					<img src="img/logotipo.png" alt="">
 				</div>
 				<div class="container__nav">
 					<nav>
 						<ul>
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="Html/Libreoffice.html" target="_blank">LibreOffice</a></li>
-							<li><a href="Html/Manual.html" target="_blank">Manual</a></li>
-							<li><a href="Html/Pagevideo.html" target="_blank">Videos</a></li>
+							<li><a class="aespecial" href="index.html">Inicio</a></li>
+							<li><a class="aespecial" href="Html/Pagevideo.html" target="_blank">Videos</a></li>
+                            <li><a class="aespecial" href="Html/Guia/Writer.html" target="_blank">Writer</a></li>
+                            <li><a class="aespecial" href="Html/Guia/Calc1.html" target="_blank">Calc</a></li>
 							<li><a href="Html/Nosotros.html" target="_blank" class="select">Nosotros</a></li>
 						</ul>
 					</nav>
@@ -43,9 +41,11 @@
 		<div class="container__all">
 
 			<div class="cover">
-
+				
+						<!--Fondo ondulado-->
 				<div class="azul"></div>
 				<div class="olas"></div>
+						<!--Fondo ondulado-->
 
 				<div class="container__cover">
 
@@ -54,10 +54,10 @@
 						<h2>DISFRUTE DEL CONTENIDO</h2>
 						<p>Esta página contiene toda la información de las charlas realizada en Corpoelec, además de eso,
 						contiene otros contenidos como lo son videos tutoriales sobre el funcionamiento de writer y calc. </p>
-						<a href="Html/Libreoffice.html" target="_blank"><input type="button" value="Comencemos"></a>
+                        <a href="Html/libre1.html" target="_blank"><input type="button" value="Comencemos"></a>
 					</div>
 					<div class="container__vector">
-						<img src="img/undraw_Code_thinking_re_gka2.svg">
+						<img src="img/body.png">
 					</div>
 
 				</div>
@@ -67,78 +67,97 @@
 
 						<!--CONTENIDO PRINCIPAL-->
 
+			<h2 class="h2main">CONTENIDOS PRINCIPALES DEL SITIO WEB</h2>
 
-			<main>
-				<h2 class="h2main">CONTENIDOS PRINCIPALES DEL SITIO WEB</h2>
+			<div class="body__page">
 
-				<div class="container__caja">
+            <div class="container__card">
 
-					<a href="Html/Libreoffice.html" class="caja">
-						<i class="lni lni-write"></i>
-						<h5 class="h5main">CONTENIDO</h5>
-					</a>
+                <div class="cards c1">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <div class="info__description">
+                        <p>LibreOffice se define como una suite ofimática libre que fue desarrollada por The Document Foundation y funciona en muchos tipos de ordenadores y sistemas operativos, como lo son Linux, Windows y Mac. En ese sentido, se encuentra disponible en más de 30 idiomas, además de que, se puede descargar, instalar y distribuir libremente. Valorando que, es de código libre y su entorno está programado en los lenguajes informáticos Java, Python y C++.</p>
+                         <a href="Html/libre1.html" target="_blank"><input type="button" value="Introducción"></a>
+                    </div>
+                </div>
 
-					<a href="Html/Pagevideo.html" class="caja">
-						<i class="lni lni-video"></i>
-						<h5 class="h5main">VIDEOS</h5>
-					</a>
+                <div class="cards c2">
+                    <div class="icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="info__description">
+                        <p>Es el componente procesador de texto de código abierto del paquete de software LibreOffice y es una bifurcación de OpenOffice.org Writer. Writer es un procesador de texto similar a Microsoft Word y a WordPerfect de Corel, con algunas características idénticas</p>
+                        <a href="Html/Guia/Writer.html" target="_blank"><input type="button" value="Writer"></a>
+                    </div>
+                </div>
 
-					<a href="Html/Manual.html" class="caja">
-						<i class="lni lni-book"></i>
-						<h5 class="h5main">MANUAL</h5>
-					</a>
+                <div class="cards c3">
+                    <div class="icon">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <div class="info__description">
+                        <p>Calc consiste en una hoja de cálculo que opera como una aplicación de manipulación y cómputo de datos números y alfanuméricos que se presentan en forma de tablas. De ese modo, facilita el análisis de datos y la presentación de sus resultados finales por medio de gráficas en 2D y 3D. Además de ello, permite añadir datos de bases de datos externas y ofrece la posibilidad de abrir o editar ficheros en formato Excel sin ninguna limitación.</p>
+                       <a href="Html/Guia/Calc1.html" target="_blank"><input type="button" value="Calc"></a>
+                    </div>
+                </div>
 
-					<a href="Html/Nosotros.html" class="caja">
-						<i class="lni lni-smile"></i>
-						<h5 class="h5main">SOBRE NOSOTROS</h5>
-					</a>
-				</div>
-			</main>
+                <div class="cards c4">
+                    <div class="icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="info__description">
+                        <p>En esta sección encontrarás unas series de videos tutoriales sobre LibreOffice, en este caso Writer y Calc.El uso del video facilita la construcción de un conocimiento significativo dado que se aprovecha el potencial comunicativo de las imágenes, los sonidos y las palabras para transmitir una serie de experiencias que estimulen los sentidos y los distintos estilos de aprendizaje en los trabajadores</p>
+                        <a href="Html/Pagevideo.html" target="_blank"><input type="button" value="Videos"></a>
+                    </div>
+                </div>
 
-			
-		<div class="container__corpoelec">
-			<div class="container__seccion">
-				<div class="imgcorpo">
-					<img src="img/corp.svg">
-				</div>
-				<div class="text__corpoelec">
-					<h2 class="h2corpo">RESUMEN DE LA CORPOELEC</h2>
-					<p class="pcorpo">La Corporación Eléctrica Nacional S.A. (CORPOELEC), adscrita al Ministerio del Poder Popular de Energía Eléctrica, es una institución que nació con la visión de reorganizar y unificar el sector eléctrico venezolano a fin de garantizar la prestación de un servicio eléctrico confiable, no excluyente y con sentido social. <a class="acorpo" href="Html/Corpoelec.html">Leer más</a></p> 
-				</div>
-			</div>
-		</div>
+                
 
-		<!--FOOTER-->
-
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-
-            <div class="box">
-                <figure>
-                    <a href="Index.html">
-                        <img src="img/logotipo.png" alt="Logo de SLee Dw">
-                    </a>
-                </figure>
             </div>
 
-            <div class="box">
-                <h2 class="h2footer">¿Dudas? - Contactame</h2>
-                <p class="pfooter">wilkervasquez43@gmail.com</p>
-                <p class="pfooter">04127749020</p>
-            </div>
+        </div>
+        
 
-            <div class="box">
-                <h2 class="h2footer">Uptaeb - Redes</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/uptdelara/" target="_blank" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/uptlara/" target="_blank" class="fa fa-instagram"></a>
-                    <a href="https://twitter.com/uptlara" target="_blank" class="fa fa-twitter"></a>
+
+
+					<!--FOOTER-->
+
+
+
+        <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="img/logotipo.png" alt="">
                 </div>
             </div>
+            <div class="box__footer">
+                <h4>¿Dudas? Contactanos</h4>
+                <p>libreoffice.uptaeb@gmail.com</p>
+            </div>
+
+            <div class="box__footer">
+                <h4>Corpoelec-Redes</h4>
+                <a href="https://www.facebook.com/Corpoelecinfo/" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://twitter.com/CorpoelecInfo" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="https://www.instagram.com/corpoelecinfo" target="_blank"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+            <div class="box__footer">
+                <h4>Uptaeb-Redes</h4>
+                <a href="https://www.facebook.com/uptdelara/" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://twitter.com/uptlara" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="https://www.instagram.com/uptlara/" target="_blank"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
         </div>
 
-        <div class="grupo-2">
-            <small>&copy; 2022 <b>Uptaeb</b> - Todos los Derechos Reservados.</small>
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2022 <b>Uptaeb</b></p>
         </div>
     </footer>
 
